@@ -17,7 +17,6 @@
     "extraResources": [
       "./build/icons/**"
     ],
-    "afterSign": "build/notarize.js",
     "productName": "Nook",
     "appId": "com.mn6.nookdesktop",
     "mac": {
@@ -53,22 +52,19 @@
     "sign": false
   },
   "devDependencies": {
-    "electron": "^23.0.0",
-    "electron-builder": "^23.6.0",
-    "electron-notarize": "^1.2.2",
-    "standard": "^17.0.0"
+    "electron": "^30.0.9",
+    "electron-builder": "^24.13.3",
+    "standard": "^17.1.0"
   },
   "dependencies": {
-    "@analytics/google-analytics": "^1.0.5",
-    "analytics": "^0.8.1",
-    "dotenv": "^16.0.3",
+    "async": "^3.2.5",
+    "dotenv": "^16.4.5",
     "electron-json-storage": "^4.6.0",
-    "electron-log": "^4.4.8",
-    "electron-updater": "^5.3.0",
-    "env-cmd": "^10.1.0",
-    "fs": "^0.0.1-security",
-    "superagent": "^8.0.3",
-    "uuid": "^9.0.0"
+    "electron-log": "^5.1.5",
+    "electron-updater": "^6.1.8",
+    "lodash": "^4.17.21",
+    "superagent": "^9.0.2",
+    "uuid": "^9.0.1"
   },
   "optionalDependencies": {
     "dmg-license": "^1.0.11"

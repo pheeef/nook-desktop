@@ -1,14 +1,15 @@
-const request = require('superagent')
 const uuid = require('uuid')
 const ipc = require('electron').ipcRenderer
 const $ = window.jQuery
 const Nanobar = window.Nanobar
 const CustomEvent = window.CustomEvent
 const confirm = window.confirm
+// eslint-disable-next-line no-unused-vars
 const u = uuid.v4()
 let i18n
 let blinkers
 let paused = false
+// eslint-disable-next-line no-unused-vars
 let language = 'en'
 
 // Load translations here
@@ -418,8 +419,6 @@ const showChangelog = () => {
 }
 
 const exec = () => {
-  logVis('home')
-
   $('#close').on('click', () => {
     ipc.send('min')
   })
