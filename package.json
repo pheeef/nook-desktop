@@ -1,6 +1,6 @@
 {
   "name": "nook-desktop",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Nook desktop",
   "main": "index.js",
   "scripts": {
@@ -11,14 +11,15 @@
     "release": "env-cmd electron-builder",
     "lint": "standard"
   },
-  "author": "mn6",
+  "author": "pheeef <phil@philsoft.at>",
+  "homepage": "https://gitlab.lv8.at/phil/nook-dekstop/",
   "license": "ISC",
   "build": {
     "extraResources": [
       "./build/icons/**"
     ],
     "productName": "Nook",
-    "appId": "com.mn6.nookdesktop",
+    "appId": "at.lv8.nookdesktop",
     "mac": {
       "gatekeeperAssess": false,
       "hardenedRuntime": true,
@@ -36,6 +37,13 @@
       "icon": "build/icons/nook.png",
       "target": [
         "nsis-web"
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb",
+        "rpm"
       ]
     }
   },

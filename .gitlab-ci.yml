@@ -1,0 +1,11 @@
+image: node:latest
+build:
+  stage: build
+  script:
+    - npm install
+    - npx electron-builder
+  artifacts:
+    paths:
+      - dist
+  only:
+    - master
