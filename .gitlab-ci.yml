@@ -1,11 +1,25 @@
-image: node:latest
+stages:
+  - build
+
 build:
+  image: node:latest
   stage: build
   script:
     - npm install
-    - npx electron-builder
+    - npx electron-builder --linux AppImage deb
   artifacts:
     paths:
-      - dist
+      - dist/*.AppImage
   only:
     - main
+
+build_rpm:
+  image: fedora:latest
+  stage: build
+  script:
+    - dnf install nodejs npm
+    - npm install
+    - npx electron-builder --linux rpm
+  artifacts:
+    paths:
+      - dist/*.rpm
