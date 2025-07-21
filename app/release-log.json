@@ -1,4 +1,8 @@
 {
+    "1.1.11": [
+        "Updated Node dependencies as well as bumped electron to latest version",
+        "Moved to new Infrastructure"
+    ],
     "1.0.11": [
         "Updated Node dependencies as well as bumped electron to latest version",
         "Removed Telemetry that was active by default"
