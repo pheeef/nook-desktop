@@ -6,7 +6,7 @@ const Wad = window.Wad
 const AudioContext = window.AudioContext
 const kkSongs = require('../kk.json')
 
-const baseUrl = 'https://d17orwheorv96d.cloudfront.net'
+const baseUrl = 'https://static.nerv.moe/nook'
 let chime
 let beep
 let sound
@@ -277,6 +277,7 @@ const toNewUrl = oldUrl => {
 const getUrl = async (oldUrl) => {
   const newUrl = toNewUrl(oldUrl)
   const lastModified = storage.getSync(`meta-${newUrl}`).lastModified
+  console.log(oldUrl)
   const s = await localSave(oldUrl, newUrl, lastModified)
 
   if ((s === 'err' || s === 'head fail' || s === 'no headers error') && !lastModified) {

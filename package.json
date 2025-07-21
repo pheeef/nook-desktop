@@ -60,19 +60,19 @@
     "sign": false
   },
   "devDependencies": {
-    "electron": "^30.0.9",
-    "electron-builder": "^24.13.3",
+    "electron": "^37.2.1",
+    "electron-builder": "^26.0.12",
     "standard": "^17.1.0"
   },
   "dependencies": {
     "async": "^3.2.5",
-    "dotenv": "^16.4.5",
+    "dotenv": "^17.2.0",
     "electron-json-storage": "^4.6.0",
     "electron-log": "^5.1.5",
     "electron-updater": "^6.1.8",
     "lodash": "^4.17.21",
-    "superagent": "^9.0.2",
-    "uuid": "^9.0.1"
+    "superagent": "^10.2.2",
+    "uuid": "^11.1.0"
   },
   "optionalDependencies": {
     "dmg-license": "^1.0.11"
